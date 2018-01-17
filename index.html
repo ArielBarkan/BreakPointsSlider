@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title> test</title>
+    <link rel="stylesheet" href="nouislider/nouislider.css" />
+    <link rel="stylesheet" href="nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="nouislider/nouislider.tooltips.css" />
+    <link rel="stylesheet" type="text/css" href="ms-Dropdown-master/css/msdropdown/dd.css" />
+
+
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+
+    <link rel="stylesheet" href="custom/css/style.css" />
+</head>
+<body>
+https://refreshless.com/nouislider/
+<br><br><br><br>
+<!-- Page contents -->
+
+<table  style="width: 100%; height: 120px;" >
+  <tr>
+    <td align="center" style="width: 1029px">
+  <br>  <br>
+  <div id="range" style="width: 660px"></div>
+      <br>
+
+
+<!---------------------->
+<form>
+            <table id="btTable" border="0"  width="700px" >
+                <thead>
+                    <tr>
+                        <th>Master</th>
+                        <th>Icon</th>
+                        <th style="width:250px">Name</th>
+                        <th>Start at (px)</th>
+                        <th>Active</th>
+                        <th colspan="2">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+              <tfoot>
+                  <tr>
+                      <td></td>
+                      <td>
+                        <select name="newimgIcon" id="newimgIcon" style="width:70px">
+                            <option value="other1.png"  data-image="custom/icons/other1.png" ></option>
+                            <option value="other2.png"  data-image="custom/icons/other2.png" ></option>
+                            <option value="big1.png"    data-image="custom/icons/big1.png" ></option>
+                            <option value="big2.png"    data-image="custom/icons/big2.png" ></option>
+                            <option value="tablet1.png" data-image="custom/icons/tablet1.png" ></option>
+                            <option value="tablet2.png" data-image="custom/icons/tablet2.png" ></option>
+                            <option value="mobile1.png" data-image="custom/icons/mobile1.png" ></option>
+                            <option value="mobile2.png" data-image="custom/icons/mobile2.png" ></option>
+                       </select>
+                      </td>
+                      <td><input type="text" id="newBpName" placeholder="name"/></td>
+                      <td><input type="number" min="1" max="1500" id="newBpStart"  placeholder="px" /></td>
+                      <td><input type="checkbox" id="newIsActive" /></td>
+                      <td id="apply" colspan="2" >Insert</td>
+                  </tr>
+              </tfoot>
+
+            </table>
+        </form>
+
+
+<!---------------------->
+<div id="rangeSliderValueElement"></div>
+<hr>
+<br>
+
+
+
+
+<br>
+
+<input type="button" id="consoleData" value="Display sliders values on console (open the console to see to output)">
+
+<br>
+
+
+
+<!-- All JS -->
+
+
+<script src="ms-Dropdown-master/js/jquery/jquery-1.9.0.min.js"></script>
+<script src="ms-Dropdown-master/js/msdropdown/jquery.dd.min.js"></script>
+<script src="nouislider/nouislider.js"></script>
+<script src="wNumb.js"></script>
+
+<!---<script src="scripts/script.js"></script>--->
+<script src="custom/scripts/script.js"></script>
+
+
+
+</body>
+</html>

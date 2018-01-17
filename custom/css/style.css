@@ -1,0 +1,227 @@
+/***
+ *      _______           _       _
+ *     |__   __|         | |     | |
+ *        | |      __ _  | |__   | |   ___
+ *        | |     / _` | | '_ \  | |  / _ \
+ *        | |    | (_| | | |_) | | | |  __/
+ *        |_|     \__,_| |_.__/  |_|  \___|
+ *
+ *
+ */
+ #btTable {
+   height: 10px;
+   font-family: Open Sans;
+   font-size: 14px;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 1.29;
+   text-align: left;
+ }
+
+ #btTable th{
+   color: #00b8c0;
+ }
+
+.trItem{
+  height: 27px;
+}
+.bpEditRow, .bpDeleteRow, #apply{
+  color: #00b8c0;
+  cursor: pointer;
+}
+ .bpSaveRow{
+      color: #de0a17;
+       cursor: pointer;
+ }
+hr{
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+input[type="radio"]{
+
+  width: 15px;
+  height: 15px;
+  background-color: #00b8c0;
+  background-color: var(--turquoise-blue);
+}
+input[type="text"][name="bpNameVal"] {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+input[type="text"][name="bpNameVal"]:disabled {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-width: 2px;
+    border-style: none;
+    border-image: none;
+}
+
+input[type="checkbox"][name="IsActiveVal"] {
+    display: none;
+}
+
+input[type="checkbox"][name="IsActiveVal"]+label {
+    background: url('checkboxUnselectedDisabled.png');
+    background-repeat: no-repeat;
+    height:22px;
+    width: 22px;
+    padding-left: 23px;
+    padding-bottom:23px;
+}
+
+input[type="checkbox"][name="IsActiveVal"]:checked + label {
+    background: url('checkboxSelectedDisabled.png');
+    background-repeat: no-repeat;
+    height:22px;
+    width: 22px;
+    padding-left: 23px;
+    padding-bottom:23px;
+}
+
+.enabledCheckbox_true{
+  cursor: pointer;
+  background: url('checkboxSelected.png') !important;
+  background-repeat: no-repeat !important;
+  height:22px;
+  width: 22px;
+  padding-left: 23px;
+  padding-bottom:23px;
+}
+.enabledCheckbox_false{
+  cursor: pointer;
+  background: url('checkboxUnselected.png') !important;
+  background-repeat: no-repeat  !important;
+  height:22px;
+  width: 22px;
+  padding-left: 23px;
+  padding-bottom:23px;
+}
+
+
+
+input[type='radio'] {
+    -webkit-appearance:none;
+    width:14px;
+    height:14px;
+    border:1px solid gray;
+    border-radius:50%;
+    outline:none;
+    box-shadow: gray inset ;
+}
+
+input[type='radio']:before {
+    content:'';
+    display:block;
+    width:60%;
+    height:60%;
+      margin: 3px;
+    border-radius:50%;
+}
+input[type='radio']:checked:before {
+    background:#00b8c0;
+}
+input[type='radio']:disabled {
+    background:#8F8F8F;
+}
+/***
+ *       _____   _   _       _
+ *      / ____| | | (_)     | |
+ *     | (___   | |  _    __| |   ___   _ __
+ *      \___ \  | | | |  / _` |  / _ \ | '__|
+ *      ____) | | | | | | (_| | |  __/ | |
+ *     |_____/  |_| |_|  \__,_|  \___| |_|
+ *
+ *
+ */
+
+ #range{
+   border: 5px;
+ }
+.noUi-handle {
+    border: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    background-image: url(indicator.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: col-resize;
+    box-shadow:none;
+   }
+.noUi-handle:before, .noUi-handle:after {
+    content: none;
+  }
+  .noUi-connect {
+    background: #1cb5bf;
+    box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .noUi-pips-horizontal {
+    padding: 0px 0;
+  }
+  .noUi-marker-horizontal.noUi-marker {
+    width: 1px;
+  }
+.noUi-custom-icon{
+    position: absolute;
+    margin-top: -40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    width:35px;
+    height: 40px;
+}
+.noUi-tooltip{
+  padding: 0px;
+    border: 0px;
+    width: 37px;
+    height: 9px;
+    font-family: Open Sans;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8;
+    text-align: center;
+    color: #424a55;
+}
+.noUi-value{
+    padding-top: 8px;
+    height: 11px;
+    font-family: Open Sans;
+    font-size: 11px;
+    color: #a3a3a3;
+    white-space: nowrap;
+}
+
+
+/***
+ *          _       _         _                          _
+ *         | |     | |       | |                        | |
+ *       __| |   __| |     __| |  _ __    ___    _ __   | |__     ___   __  __
+ *      / _` |  / _` |    / _` | | '__|  / _ \  | '_ \  | '_ \   / _ \  \ \/ /
+ *     | (_| | | (_| |   | (_| | | |    | (_) | | |_) | | |_) | | (_) |  >  <
+ *      \__,_|  \__,_|    \__,_| |_|     \___/  | .__/  |_.__/   \___/  /_/\_\
+ *                                              | |
+ *                                              |_|
+ */
+.dd .ddTitle {
+
+    background: none;
+}
+.dd {
+/*  border: none;*/
+}
+.dd .divider {
+    border-left: none;
+    border-right:none;
+}
+.borderRadiusTp{
+  color: red !important;
+}
